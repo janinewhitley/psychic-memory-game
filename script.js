@@ -92,18 +92,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //check for matches
     function checkForMatch() {
+        const closeAlertTimer = () => {
+            if (document.querySelector('.match').style.display = 'flex') {
+                document.querySelector('.match').style.display = 'none';
+            }
+            if (document.querySelector('.wrong').style.display = 'flex') {
+                document.querySelector('.wrong').style.display = 'none'
+            }
+        }
         var matches = document.querySelectorAll('img');
         const optionOneId = cardsChosenId[0];
         const optionTwoId = cardsChosenId[1];
         if (cardsChosen[0] === cardsChosen[1]) {
-            document.querySelector('.match').style.display = 'flex';
             matches[optionOneId].style.visibility = 'hidden';
             matches[optionTwoId].style.visibility = 'hidden';
+            document.querySelector('.match').style.display = 'flex';
+            setTimeout(closeAlertTimer, 500);
             cardsWon.push(cardsChosen);
         } else if (cardsChosen[0] !== cardsChosen[1]) {
-            document.querySelector('.wrong').style.display = 'flex';
             matches[optionOneId].setAttribute('src', 'images/blank.svg');
             matches[optionTwoId].setAttribute('src', 'images/blank.svg');
+            document.querySelector('.wrong').style.display = 'flex';
+            setTimeout(closeAlertTimer, 500);
         }
         else {
             document.querySelector('.error').style.display = 'flex';
