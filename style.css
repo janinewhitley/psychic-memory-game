@@ -22,13 +22,13 @@ h1 {
     border: 2px solid #16161d;
     border-radius: 1rem;
     padding: .5rem;
-    grid-template-columns: repeat(4, 11.5rem);
-    grid-template-rows: repeat(4, 11.5rem);
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(4, 10rem);
 }
 
 img {
-    height: 10rem;
-    width: 10rem;
+    height: 8.5rem;
+    width: 8.5rem;
     border-radius: 2rem;
     border: 2px solid #000;
 }
@@ -86,13 +86,13 @@ img {
 @media screen and (max-width: 768px) {
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 6rem);
-        grid-template-rows: repeat(4, 6rem);
+        grid-template-columns: repeat(4, 5.5rem);
+        grid-template-rows: repeat(4, 5.5rem);
     }
 
     img {
-        height: 5.5rem;
-        width: 5.5rem;
+        height: 4.5rem;
+        width: 4.5rem;
         border-radius: 1rem;
     }
 }
