@@ -79,6 +79,7 @@ img {
     align-items: center;
     display: none;
     cursor: pointer;
+    top: 50%;
 }
 
 
