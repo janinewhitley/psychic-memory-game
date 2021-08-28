@@ -79,7 +79,7 @@ img {
     align-items: center;
     display: none;
     cursor: pointer;
-    top: 35%;
+    top: 50%;
 }
 
 
@@ -95,4 +95,8 @@ img {
         width: 4.5rem;
         border-radius: .75rem;
     }
+
+.refresh {
+top: 40%
+}
 }
